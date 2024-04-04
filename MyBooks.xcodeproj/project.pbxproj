@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B11AB5B72BBF11A0003AF409 /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11AB5B62BBF11A0003AF409 /* BookList.swift */; };
 		B14CF19F2BBE4E03005BA5B9 /* MyBooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14CF19E2BBE4E03005BA5B9 /* MyBooksApp.swift */; };
-		B14CF1A12BBE4E03005BA5B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14CF1A02BBE4E03005BA5B9 /* ContentView.swift */; };
+		B14CF1A12BBE4E03005BA5B9 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14CF1A02BBE4E03005BA5B9 /* BookListView.swift */; };
 		B14CF1A32BBE4E08005BA5B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14CF1A22BBE4E08005BA5B9 /* Assets.xcassets */; };
 		B14CF1A62BBE4E08005BA5B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14CF1A52BBE4E08005BA5B9 /* Preview Assets.xcassets */; };
+		B14CF1AE2BBE4E1B005BA5B9 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14CF1AD2BBE4E1B005BA5B9 /* Book.swift */; };
+		B14CF1B02BBE510E005BA5B9 /* NewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14CF1AF2BBE510E005BA5B9 /* NewBookView.swift */; };
+		B14CF1B22BBE5757005BA5B9 /* EditBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14CF1B12BBE5757005BA5B9 /* EditBookView.swift */; };
+		B14CF1B42BBE5A90005BA5B9 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14CF1B32BBE5A90005BA5B9 /* RatingsView.swift */; };
+		B14CF1B62BBEE263005BA5B9 /* BookSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14CF1B52BBEE263005BA5B9 /* BookSamples.swift */; };
+		B14CF1B82BBEE38D005BA5B9 /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14CF1B72BBEE38D005BA5B9 /* PreviewContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B11AB5B62BBF11A0003AF409 /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
 		B14CF19B2BBE4E03005BA5B9 /* MyBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B14CF19E2BBE4E03005BA5B9 /* MyBooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBooksApp.swift; sourceTree = "<group>"; };
-		B14CF1A02BBE4E03005BA5B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B14CF1A02BBE4E03005BA5B9 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
 		B14CF1A22BBE4E08005BA5B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B14CF1A52BBE4E08005BA5B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B14CF1AD2BBE4E1B005BA5B9 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		B14CF1AF2BBE510E005BA5B9 /* NewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookView.swift; sourceTree = "<group>"; };
+		B14CF1B12BBE5757005BA5B9 /* EditBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBookView.swift; sourceTree = "<group>"; };
+		B14CF1B32BBE5A90005BA5B9 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
+		B14CF1B52BBEE263005BA5B9 /* BookSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSamples.swift; sourceTree = "<group>"; };
+		B14CF1B72BBEE38D005BA5B9 /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +66,12 @@
 			isa = PBXGroup;
 			children = (
 				B14CF19E2BBE4E03005BA5B9 /* MyBooksApp.swift */,
-				B14CF1A02BBE4E03005BA5B9 /* ContentView.swift */,
+				B14CF1A02BBE4E03005BA5B9 /* BookListView.swift */,
+				B11AB5B62BBF11A0003AF409 /* BookList.swift */,
+				B14CF1AF2BBE510E005BA5B9 /* NewBookView.swift */,
+				B14CF1B12BBE5757005BA5B9 /* EditBookView.swift */,
+				B14CF1B32BBE5A90005BA5B9 /* RatingsView.swift */,
+				B14CF1AC2BBE4E0D005BA5B9 /* Model */,
 				B14CF1A22BBE4E08005BA5B9 /* Assets.xcassets */,
 				B14CF1A42BBE4E08005BA5B9 /* Preview Content */,
 			);
@@ -63,8 +82,18 @@
 			isa = PBXGroup;
 			children = (
 				B14CF1A52BBE4E08005BA5B9 /* Preview Assets.xcassets */,
+				B14CF1B52BBEE263005BA5B9 /* BookSamples.swift */,
+				B14CF1B72BBEE38D005BA5B9 /* PreviewContainer.swift */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B14CF1AC2BBE4E0D005BA5B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B14CF1AD2BBE4E1B005BA5B9 /* Book.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +166,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B14CF1A12BBE4E03005BA5B9 /* ContentView.swift in Sources */,
+				B14CF1B62BBEE263005BA5B9 /* BookSamples.swift in Sources */,
+				B14CF1B02BBE510E005BA5B9 /* NewBookView.swift in Sources */,
+				B14CF1B42BBE5A90005BA5B9 /* RatingsView.swift in Sources */,
+				B11AB5B72BBF11A0003AF409 /* BookList.swift in Sources */,
+				B14CF1B22BBE5757005BA5B9 /* EditBookView.swift in Sources */,
+				B14CF1A12BBE4E03005BA5B9 /* BookListView.swift in Sources */,
 				B14CF19F2BBE4E03005BA5B9 /* MyBooksApp.swift in Sources */,
+				B14CF1B82BBEE38D005BA5B9 /* PreviewContainer.swift in Sources */,
+				B14CF1AE2BBE4E1B005BA5B9 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
