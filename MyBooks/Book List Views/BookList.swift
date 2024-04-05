@@ -87,5 +87,6 @@ struct BookList: View {
         BookList(sortOrder: .status, filterString: "")
     }
     .modelContainer(preview.container)
+    
 }
 

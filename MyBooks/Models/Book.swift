@@ -25,6 +25,12 @@ class Book {
     // the property declaration to avoid having the app crash on anyone who has already used
     // it without this new property. The other option would be to make it optional.
     var recommendedBy: String = ""
+    // Establishes a one to many relationship with the Quote model. This can be an empty array
+    // or an optional, however if you plan to use CLoudKit this must be optional.
+    // This doesn't need to be added to the initializer because when you create a new book,
+    // there won't be any quotes.
+    // The cascade deltion rule qill delete all children of a parent when the parent is deleted
+    @Relationship(deletionRule: .cascade) var quotes: [Quote]?
     
     // Press Control + M to separate onto individual lines
     // Supply default values for anything you DON'T want to be required

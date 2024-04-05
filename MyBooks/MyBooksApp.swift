@@ -19,8 +19,13 @@ struct MyBooksApp: App {
             BookListView()
         }
         // OPTION + CLICK on a method to get more information on it
+        //
+        // In SwiftData, when there is a relationship between two models, you only need to create
+        // a container for one. SwiftData is smart enough to create related containers.
+        //
         // The following commented line is the standard way of creating a ModelContainer
         // .modelContainer(for: Book.self) // Create model container
+        //
         // The following is how to create a custome configured container
         .modelContainer(container)
     }
