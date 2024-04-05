@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct NewBookView: View {
+    @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
-    @Environment(\.dismiss) var dismiss
     
     @State private var title: String = ""
     @State private var author: String = ""

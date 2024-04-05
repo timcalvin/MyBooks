@@ -29,8 +29,10 @@ class Book {
     // or an optional, however if you plan to use CLoudKit this must be optional.
     // This doesn't need to be added to the initializer because when you create a new book,
     // there won't be any quotes.
+    //
     // The cascade deltion rule qill delete all children of a parent when the parent is deleted
-    @Relationship(deletionRule: .cascade) var quotes: [Quote]?
+    @Relationship(deleteRule: .cascade) var quotes: [Quote]?
+    @Relationship(inverse: \Genre.books) var genres: [Genre]?
     
     // Press Control + M to separate onto individual lines
     // Supply default values for anything you DON'T want to be required

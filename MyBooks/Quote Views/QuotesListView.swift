@@ -4,6 +4,8 @@
 //
 //  Created by Timothy Bryant on 4/4/24.
 //
+//  Reply from Stewart about sorting children dynamically:
+//  This is currently problematic using a @Query in SwiftData.  You might want to do this as an in memory sort using a sort method.
 
 import SwiftUI
 

@@ -10,6 +10,13 @@
 		B11AB5B72BBF11A0003AF409 /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11AB5B62BBF11A0003AF409 /* BookList.swift */; };
 		B11AB5B92BBF4E1C003AF409 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11AB5B82BBF4E1C003AF409 /* Quote.swift */; };
 		B11AB5BB2BBF4F6B003AF409 /* QuotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11AB5BA2BBF4F6B003AF409 /* QuotesListView.swift */; };
+		B11AB5C02BBF9ADF003AF409 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11AB5BF2BBF9ADE003AF409 /* Genre.swift */; };
+		B11AB5C32BBF9B8D003AF409 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11AB5C22BBF9B8D003AF409 /* UIColor+Extension.swift */; };
+		B11AB5C52BBF9C18003AF409 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11AB5C42BBF9C18003AF409 /* Color+Extension.swift */; };
+		B11AB5C72BBF9D1B003AF409 /* GenreSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11AB5C62BBF9D1B003AF409 /* GenreSamples.swift */; };
+		B11AB5CA2BBF9E09003AF409 /* GenresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11AB5C92BBF9E09003AF409 /* GenresView.swift */; };
+		B11AB5CC2BBFAA25003AF409 /* NewGenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11AB5CB2BBFAA25003AF409 /* NewGenreView.swift */; };
+		B11AB5CE2BBFADA6003AF409 /* GenresStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11AB5CD2BBFADA6003AF409 /* GenresStackView.swift */; };
 		B14CF19F2BBE4E03005BA5B9 /* MyBooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14CF19E2BBE4E03005BA5B9 /* MyBooksApp.swift */; };
 		B14CF1A12BBE4E03005BA5B9 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14CF1A02BBE4E03005BA5B9 /* BookListView.swift */; };
 		B14CF1A32BBE4E08005BA5B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14CF1A22BBE4E08005BA5B9 /* Assets.xcassets */; };
@@ -26,6 +33,13 @@
 		B11AB5B62BBF11A0003AF409 /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
 		B11AB5B82BBF4E1C003AF409 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		B11AB5BA2BBF4F6B003AF409 /* QuotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesListView.swift; sourceTree = "<group>"; };
+		B11AB5BF2BBF9ADE003AF409 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		B11AB5C22BBF9B8D003AF409 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		B11AB5C42BBF9C18003AF409 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		B11AB5C62BBF9D1B003AF409 /* GenreSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSamples.swift; sourceTree = "<group>"; };
+		B11AB5C92BBF9E09003AF409 /* GenresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresView.swift; sourceTree = "<group>"; };
+		B11AB5CB2BBFAA25003AF409 /* NewGenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGenreView.swift; sourceTree = "<group>"; };
+		B11AB5CD2BBFADA6003AF409 /* GenresStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresStackView.swift; sourceTree = "<group>"; };
 		B14CF19B2BBE4E03005BA5B9 /* MyBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B14CF19E2BBE4E03005BA5B9 /* MyBooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBooksApp.swift; sourceTree = "<group>"; };
 		B14CF1A02BBE4E03005BA5B9 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
@@ -50,23 +64,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B11AB5BC2BBF4F7D003AF409 /* Book List Views */ = {
+		B11AB5BC2BBF4F7D003AF409 /* Books */ = {
 			isa = PBXGroup;
 			children = (
 				B14CF1A02BBE4E03005BA5B9 /* BookListView.swift */,
 				B11AB5B62BBF11A0003AF409 /* BookList.swift */,
-			);
-			path = "Book List Views";
-			sourceTree = "<group>";
-		};
-		B11AB5BD2BBF4F9D003AF409 /* New and Edit Book Views */ = {
-			isa = PBXGroup;
-			children = (
 				B14CF1AF2BBE510E005BA5B9 /* NewBookView.swift */,
 				B14CF1B12BBE5757005BA5B9 /* EditBookView.swift */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		B11AB5BD2BBF4F9D003AF409 /* Components */ = {
+			isa = PBXGroup;
+			children = (
 				B14CF1B32BBE5A90005BA5B9 /* RatingsView.swift */,
 			);
-			path = "New and Edit Book Views";
+			path = Components;
 			sourceTree = "<group>";
 		};
 		B11AB5BE2BBF4FB5003AF409 /* Quote Views */ = {
@@ -75,6 +89,25 @@
 				B11AB5BA2BBF4F6B003AF409 /* QuotesListView.swift */,
 			);
 			path = "Quote Views";
+			sourceTree = "<group>";
+		};
+		B11AB5C12BBF9B40003AF409 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B11AB5C42BBF9C18003AF409 /* Color+Extension.swift */,
+				B11AB5C22BBF9B8D003AF409 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B11AB5C82BBF9DFC003AF409 /* Genres */ = {
+			isa = PBXGroup;
+			children = (
+				B11AB5C92BBF9E09003AF409 /* GenresView.swift */,
+				B11AB5CB2BBFAA25003AF409 /* NewGenreView.swift */,
+				B11AB5CD2BBFADA6003AF409 /* GenresStackView.swift */,
+			);
+			path = Genres;
 			sourceTree = "<group>";
 		};
 		B14CF1922BBE4E03005BA5B9 = {
@@ -97,9 +130,11 @@
 			isa = PBXGroup;
 			children = (
 				B14CF19E2BBE4E03005BA5B9 /* MyBooksApp.swift */,
-				B11AB5BC2BBF4F7D003AF409 /* Book List Views */,
-				B11AB5BD2BBF4F9D003AF409 /* New and Edit Book Views */,
+				B11AB5BC2BBF4F7D003AF409 /* Books */,
 				B11AB5BE2BBF4FB5003AF409 /* Quote Views */,
+				B11AB5C82BBF9DFC003AF409 /* Genres */,
+				B11AB5BD2BBF4F9D003AF409 /* Components */,
+				B11AB5C12BBF9B40003AF409 /* Extensions */,
 				B14CF1AC2BBE4E0D005BA5B9 /* Models */,
 				B14CF1A22BBE4E08005BA5B9 /* Assets.xcassets */,
 				B14CF1A42BBE4E08005BA5B9 /* Preview Content */,
@@ -112,6 +147,7 @@
 			children = (
 				B14CF1A52BBE4E08005BA5B9 /* Preview Assets.xcassets */,
 				B14CF1B52BBEE263005BA5B9 /* BookSamples.swift */,
+				B11AB5C62BBF9D1B003AF409 /* GenreSamples.swift */,
 				B14CF1B72BBEE38D005BA5B9 /* PreviewContainer.swift */,
 			);
 			path = "Preview Content";
@@ -121,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				B14CF1AD2BBE4E1B005BA5B9 /* Book.swift */,
+				B11AB5BF2BBF9ADE003AF409 /* Genre.swift */,
 				B11AB5B82BBF4E1C003AF409 /* Quote.swift */,
 			);
 			path = Models;
@@ -197,14 +234,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B14CF1B62BBEE263005BA5B9 /* BookSamples.swift in Sources */,
+				B11AB5C52BBF9C18003AF409 /* Color+Extension.swift in Sources */,
 				B14CF1B02BBE510E005BA5B9 /* NewBookView.swift in Sources */,
+				B11AB5CC2BBFAA25003AF409 /* NewGenreView.swift in Sources */,
 				B14CF1B42BBE5A90005BA5B9 /* RatingsView.swift in Sources */,
+				B11AB5C02BBF9ADF003AF409 /* Genre.swift in Sources */,
 				B11AB5B72BBF11A0003AF409 /* BookList.swift in Sources */,
+				B11AB5CE2BBFADA6003AF409 /* GenresStackView.swift in Sources */,
 				B14CF1B22BBE5757005BA5B9 /* EditBookView.swift in Sources */,
 				B14CF1A12BBE4E03005BA5B9 /* BookListView.swift in Sources */,
 				B14CF19F2BBE4E03005BA5B9 /* MyBooksApp.swift in Sources */,
 				B14CF1B82BBEE38D005BA5B9 /* PreviewContainer.swift in Sources */,
+				B11AB5CA2BBF9E09003AF409 /* GenresView.swift in Sources */,
+				B11AB5C72BBF9D1B003AF409 /* GenreSamples.swift in Sources */,
 				B11AB5B92BBF4E1C003AF409 /* Quote.swift in Sources */,
+				B11AB5C32BBF9B8D003AF409 /* UIColor+Extension.swift in Sources */,
 				B14CF1AE2BBE4E1B005BA5B9 /* Book.swift in Sources */,
 				B11AB5BB2BBF4F6B003AF409 /* QuotesListView.swift in Sources */,
 			);

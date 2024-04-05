@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EditBookView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) private var dismiss
     
     let book: Book
     
@@ -25,6 +25,7 @@ struct EditBookView: View {
     @State private var dateStarted = Date.distantPast
     @State private var dateCompleted = Date.distantPast
     @State private var recommendedBy = ""
+    @State private var showGenres = false
     
     // Setting the dates in onAppear can mess up the onChange method. To Fix that add this property
     // and use this property to check that it's not the first view in the onChange(of: status) call.
@@ -122,14 +123,33 @@ struct EditBookView: View {
                     .padding(5)
                     .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color(uiColor: .tertiarySystemFill), lineWidth: 2))
                 
-                NavigationLink {
-                    QuotesListView(book: book)
-                } label: {
-                    let count = book.quotes?.count ?? 0
-                    // The following string will automatically pluralize words when necessary
-                    // Make sure that your deletion rules for SwiftData are setup properly otherwise
-                    // this could yield unexpected results.
-                    Label("^[\(count) Quotes](inflect: true", systemImage: "quote.opening")
+                // List of Genres
+                if let genres = book.genres {
+                    ViewThatFits {
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            GenresStackView(genres: genres)
+                        }
+                    }
+                }
+                
+                // Buttons for adding quotes and genres
+                HStack {
+                    Button("Genres", systemImage: "bookmark.fill") {
+                        showGenres.toggle()
+                    }
+                    .sheet(isPresented: $showGenres) {
+                        GenresView(book: book)
+                    }
+                    
+                    NavigationLink {
+                        QuotesListView(book: book)
+                    } label: {
+                        let count = book.quotes?.count ?? 0
+                        // The following string will automatically pluralize words when necessary
+                        // Make sure that your deletion rules for SwiftData are setup properly otherwise
+                        // this could yield unexpected results.
+                        Label("^[\(count) Quotes](inflect: true)", systemImage: "quote.opening")
+                    }
                 }
                 .buttonStyle(.bordered)
                 .frame(maxWidth: .infinity, alignment: .trailing)

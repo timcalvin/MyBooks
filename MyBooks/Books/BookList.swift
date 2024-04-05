@@ -9,7 +9,7 @@ import SwiftData
 import SwiftUI
 
 struct BookList: View {
-    @Environment(\.modelContext) var modelContext
+    @Environment(\.modelContext) private var modelContext
     
     // Read items from the database
     // The sort propert tells SwiftData which key to sort on
@@ -59,6 +59,15 @@ struct BookList: View {
                                                 Image(systemName: "star.fill")
                                                     .imageScale(.small)
                                                     .foregroundStyle(.yellow)
+                                            }
+                                        }
+                                    }
+                                    
+                                    // List of Genres
+                                    if let genres = book.genres {
+                                        ViewThatFits {
+                                            ScrollView(.horizontal, showsIndicators: false) {
+                                                GenresStackView(genres: genres)
                                             }
                                         }
                                     }
